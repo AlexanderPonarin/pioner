@@ -1,0 +1,47 @@
+@import "../functions.scss";
+
+
+.products {
+    margin-top: 80px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 32px;
+        gap: calc-size(20);
+    }
+
+    &__item {
+        padding: 32px 0px 32px 24px;
+        background-color: $color-light-gray;
+        width: calc-size(380);
+        height: calc-size(435);
+    }
+
+    &__item-wrap {
+        width: calc-size(200);
+        height: calc-size(194);
+    }
+
+    &__item-img {
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__item-title {
+        margin-top: calc-size(107);
+    }
+
+    &__item-text {
+        margin-top: calc-size(14);
+        color: rgb(96, 124, 230);
+        font-size: calc-size(20);
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0%;
+        text-align: left;
+
+    }
+}

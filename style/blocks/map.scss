@@ -1,0 +1,23 @@
+@import "../functions.scss";
+
+
+.map {
+    margin-top: 80px;
+
+    &__wrap {
+        position: relative;
+        width: calc-size(1180);
+        height: calc-size(715);
+    }
+
+    &__region {
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    &__region:hover {
+        fill: $color-light-gray;
+        transition: 0.5s;
+
+    }
+}

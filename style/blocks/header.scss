@@ -1,0 +1,84 @@
+@import "../functions.scss";
+
+.header {
+    margin-top: 32px;
+    
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.contacts {
+    display: flex;
+    gap: calc-size(20);
+    text-align: right;
+
+    &__text-accent {
+        color: $color-accent;
+        font-size: calc-size(20);
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: right;
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+}
+
+.separator {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $color-gray;
+    margin-top: 16px;
+}
+
+.nav {
+    display: flex;
+
+    &__list {
+        display: flex;
+        gap: calc-size(44);
+    }
+
+    &__link {
+        color: $color-dark;
+        transition: 0.5s;
+    }
+
+    &__link:hover {
+        color: $color-accent;
+        transition: 0.5s;
+    }
+}
+
+.call {
+    display: flex;
+    gap: 1px;
+
+    &__img {
+        width: calc-size(16);
+        height: calc-size(16);
+    }
+
+    &__text {
+        color: $color-accent;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.logo {
+    fill: $color-accent;
+    color: $color-accent;
+    stroke: $color-accent;
+}

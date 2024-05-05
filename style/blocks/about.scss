@@ -1,0 +1,23 @@
+@import "../functions.scss";
+
+
+.about {
+    margin-top: 80px;
+
+    &__description {
+        margin-top: 32px;
+        display: flex;
+        gap: calc-size(20);
+    }
+
+    &__images {
+        margin-top: 20px;
+        display: flex;
+        gap: calc-size(20);
+    }
+
+    &__img {
+        width: calc-size(580);
+        height: calc-size(280);
+    }
+}

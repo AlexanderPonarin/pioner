@@ -1,0 +1,6 @@
+@function calc-size($size) {
+    $min-size: ($size * 0.8) + px;
+    $max-size: ($size * 1.2) + px;
+    $cur-size: ($size / 14.4) + rem;
+    @return clamp($min-size, $cur-size, $max-size);
+  }
